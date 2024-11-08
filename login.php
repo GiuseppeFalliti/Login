@@ -12,7 +12,7 @@
     $dataNascita = $_POST["data"];
 
     printf("Dati: ". "Nome Utente:" .$nomeUtente ."|Nome:". $nome."|Cognome:". $cognome."|Password:". $password."|Data: ". $dataNascita);
-    echo("<h1></h1>",$nomeUtente); //fare tutto
+    
 }
 ?>
 </body>
