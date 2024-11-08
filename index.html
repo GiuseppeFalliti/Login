@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Icrizione</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+#forms{
+    text-align: center;
+    justify-content: center;
+    
+}
+</style>
+<body>
+    <!--creare una pagina web di login di un social.
+    Campi:
+    -nome
+    -cognome
+    -password
+    -dataNscita
+    -NomeUtente
+    -->
+    <form action="login.php" method="post" id="forms">
+        <label for="nomeUtente">Nome Utente:</label>
+        <br>
+        <input type="text" id="utente" name="utente" required>
+        <br>
+        <label for="nome">Nome:</label>
+        <br>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="cognome">Cognome:</label>
+        <br>
+        <input type="text" id="cognome" name="cognome" required>
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" id="password"  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="La password deve contenere almeno 8 caratteri, con almeno una lettera e un numero." required >
+        <br>
+        <label for="data">Data Nascita:</label>
+        <br>
+        <input type="date" id="data" name="data" required>
+        <br>
+        <br>
+        <input type="submit" id="bottone" value="iscriviti">
+
+
+    </form>
+</body>
+</html>
