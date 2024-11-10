@@ -9,6 +9,8 @@ La pagina di login iniziale, dove l'utente può inserire nome utente e password 
     Un form per il login con due campi: UserName (nome utente) e password.
     Un link "Password Dimenticata" (solo a scopo illustrativo) e un'opzione "Resta Connesso" per l'utente.
     Un link che reindirizza alla pagina di registrazione (registrati.html) se l'utente non ha un account.
+    
+![[Pasted image 20241110200816.png]]
 
 2. login.php
 
@@ -27,6 +29,9 @@ La pagina di registrazione, che consente agli utenti di creare un nuovo account.
     password: password dell'utente (con requisiti di lunghezza e complessità)
     data: data di nascita dell'utente
     Una volta inviato il form, l'utente viene reindirizzato a registrati.php.
+    
+![[Pasted image 20241110200900.png]]
+
 
 4. registrati.php
 
