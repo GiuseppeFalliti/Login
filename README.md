@@ -29,8 +29,9 @@ La pagina di registrazione, che consente agli utenti di creare un nuovo account.
     password: password dell'utente (con requisiti di lunghezza e complessità)
     data: data di nascita dell'utente
     Una volta inviato il form, l'utente viene reindirizzato a registrati.php.
-    
-![[Pasted image 20241110200900.png]]
+
+![immagine](https://github.com/user-attachments/assets/cd2604f1-b950-47a1-9d71-9a4a4f548bd0)
+
 
 
 4. registrati.php
