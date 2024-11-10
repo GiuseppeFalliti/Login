@@ -10,7 +10,8 @@ La pagina di login iniziale, dove l'utente può inserire nome utente e password 
     Un link "Password Dimenticata" (solo a scopo illustrativo) e un'opzione "Resta Connesso" per l'utente.
     Un link che reindirizza alla pagina di registrazione (registrati.html) se l'utente non ha un account.
     
-![[Pasted image 20241110200816.png]]
+![immagine](https://github.com/user-attachments/assets/4cb1f377-4c0c-4560-8edf-9734a6eeb907)
+
 
 2. login.php
 
