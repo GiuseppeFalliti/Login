@@ -40,11 +40,11 @@ body{
         $password = $_POST["password"];
         $dataNascita = $_POST["data"];
 
-        // Salvataggio dei dati utente in un file di testo
-        $file = fopen("utenti.txt", "a");  // Apri il file in modalità di aggiunta
+        
+        $file = fopen("utenti.txt", "a");  
         $line = $nomeUtente . "|" . $nome . "|" . $cognome . "|" . $password . "|" . $dataNascita . "\n";
-        fwrite($file, $line);  // Scrivi i dati dell'utente in una nuova linea
-        fclose($file);  // Chiudi il file
+        fwrite($file, $line);  
+        fclose($file);  
     
 }
 ?>
