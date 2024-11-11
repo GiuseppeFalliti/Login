@@ -39,16 +39,23 @@ body{
         $cognome = $_POST["cognome"];
         $password = $_POST["password"];
         $dataNascita = $_POST["data"];
+
+        // Salvataggio dei dati utente in un file di testo
+        $file = fopen("utenti.txt", "a");  // Apri il file in modalità di aggiunta
+        $line = $nomeUtente . "|" . $nome . "|" . $cognome . "|" . $password . "|" . $dataNascita . "\n";
+        fwrite($file, $line);  // Scrivi i dati dell'utente in una nuova linea
+        fclose($file);  // Chiudi il file
     
 }
 ?>
 <div class="dati">
-<h1>Hai Effetuato l'accesso</h1>
-<h3>Nome Utente: <?php echo($nomeUtente);?></h3>
-<h3>Nome: <?php echo($nome);?></h3>
-<h3>Cognome: <?php echo($cognome);?></h3>
-<h3>Password: <?php echo($password);?></h3>
-<h3>Data Nascita: <?php echo($dataNascita);?></h3>
+    <h1>Registrazione completata</h1>
+    <h3>Nome Utente: <?php echo htmlspecialchars($nomeUtente); ?></h3>
+    <h3>Nome: <?php echo htmlspecialchars($nome); ?></h3>
+    <h3>Cognome: <?php echo htmlspecialchars($cognome); ?></h3>
+    <h3>Data Nascita: <?php echo htmlspecialchars($dataNascita); ?></h3>
+</div>
+
 </body>
 </html>
 </div>
