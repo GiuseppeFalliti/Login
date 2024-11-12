@@ -31,28 +31,11 @@
 </head>
 <body>
 <?php
-    $accessoConsentito = false;
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nomeUtente = $_POST["UserName"];
         $password = $_POST["password"];
-
-        
-        $file = fopen("utenti.txt", "r");
-        if ($file) {
-            while (($line = fgets($file)) !== false) {
-                $datiUtente = explode("|", trim($line)); 
-                if ($datiUtente[0] == $nomeUtente && $datiUtente[3] == $password) {
-                    $accessoConsentito = true;
-                    $nome = $datiUtente[1];
-                    $cognome = $datiUtente[2];
-                    $dataNascita = $datiUtente[4];
-                    break;
-                }
-            }
-            fclose($file);
         }
-    }
+    
 ?>
 
 <div class="dati">
