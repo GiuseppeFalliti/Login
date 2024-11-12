@@ -41,10 +41,7 @@ body{
         $dataNascita = $_POST["data"];
 
         
-        $file = fopen("utenti.txt", "a");  
-        $line = $nomeUtente . "|" . $nome . "|" . $cognome . "|" . $password . "|" . $dataNascita . "\n";
-        fwrite($file, $line);  
-        fclose($file);  
+       
     
 }
 ?>
