@@ -9,7 +9,7 @@ body{
     display: flex; 
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 700px;
     background: #dfdfdf;
 }
 .login-box{
@@ -60,12 +60,9 @@ body{
 }
 .input-submit label{
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 30%;
+    left: 40%;
     color: #fff;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     cursor: pointer;
     
 }
